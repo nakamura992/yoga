@@ -1,0 +1,463 @@
+@charset "utf-8";
+
+html {
+  font-size: 100%;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+}
+
+footer {
+  background-color: #432;
+  text-align: center;
+  bottom: 0;
+
+  width: 100%;
+  height: 50px;
+}
+
+footer p {
+  color: #fff;
+  font-size: 0.875rem;
+  padding-top: 13px;
+}
+
+
+.wrapper {
+  /* max-width: 1200px; */
+  width: 100%;
+  padding: 0 4%;
+  margin: 0 auto;
+
+}
+
+#home {
+  background-image: url(../images/yogagazou.jpg);
+  min-height: 100vh;
+
+
+}
+
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+}
+
+.page-header2 {
+  background-color: rgb(245, 205, 153);
+  max-width: 100%;
+  padding-left: 100px;
+  top: 0;
+  position: fixed;
+  z-index: 999;
+
+}
+
+
+
+
+.header-logo {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+
+
+a {
+  text-decoration: none;
+
+}
+
+img {
+  max-width: 100%;
+
+}
+
+.logo {
+  width: 100px;
+  border-radius: 100%;
+  margin-right: 15px;
+
+}
+
+
+.page-title {
+  font-weight: normal;
+  color: rgb(82, 114, 106);
+  font-family: 'Pacifico', cursive;
+  font-size: 2.9rem;
+  padding-top: 15px;
+}
+
+nav {
+  width: 55%;
+
+}
+
+.main-nav {
+  display: flex;
+  list-style-type: none;
+  margin-top: 35px;
+  padding-left: 0;
+}
+
+.main-nav li {
+  margin-left: 35px;
+}
+
+.nav-home {
+  margin-top: 10px;
+  border-bottom: 3px solid #92b488;
+  opacity: 0.5;
+}
+
+.nav-nyukai {
+  margin-top: 10px;
+  border-bottom: 3px solid #92b488;
+  opacity: 0.5;
+}
+
+.nav-otoiawase {
+  margin-top: 10px;
+  border-bottom: 3px solid #92b488;
+  opacity: 0.5;
+}
+
+.nav-hajimetenokata {
+  margin-top: 10px;
+  border-bottom: 3px solid #92b488;
+  opacity: 0.5;
+}
+
+
+.main-nav a {
+  font-size: 1.5rem;
+  color: rgb(28, 94, 78);
+  font-family: 'Zen Antique', serif;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  transition: .3s
+}
+
+.main-nav a::before {
+  content: "";
+  width: 90%;
+  height: 10px;
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  z-index: -1;
+  opacity: 0;
+  transition: .3s;
+}
+
+.main-nav a:hover {
+  color: #09443d71;
+  transform: translateY(-7px);
+
+}
+
+.main-nav a:hover::before {
+  transform: translateY(7px);
+  opacity: 1;
+}
+
+.container {
+  display: block;
+  margin-left: 50px;
+  padding-top: 20px;
+
+
+}
+
+.home-content {
+  padding-top: 100px;
+}
+
+#kankaku {
+  margin-bottom: 10px;
+}
+
+#yoga {
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.main-title {
+  font-family: 'Klee One', cursive;
+  color: cadetblue;
+  text-shadow: 1px 1px #969da3;
+  font-size: 2.3rem;
+  margin-top: 20px;
+  margin-bottom: 70px;
+
+}
+
+
+
+
+
+.button {
+  background-color: rgb(43, 104, 109);
+  color: #fff;
+  padding: 18px 32px;
+  font-size: 1.375rem;
+  border-radius: 40px;
+  opacity: 0.5;
+  margin-left: 150px;
+  display: inline-block;
+  transition: .5s;
+
+}
+
+.button:hover {
+  background-color: rgb(3, 56, 59);
+  color: #fff;
+  transform: scale(1.1);
+
+}
+
+
+
+
+
+/* nyukai
+ ---------------*/
+
+.nyukai-content {
+  padding: 130px;
+}
+
+.nyukai-content h2 {
+  margin: 50px;
+  color: gray;
+}
+
+.nyukai-content h3 {
+  border-bottom: 3px solid #f5ec6a;
+  margin-bottom: 40px;
+  color: grey;
+  margin-top: 40px;
+}
+
+.nyukai-content p {
+  color: rgb(107, 89, 72);
+}
+
+.nyukai-content a {
+  color: cornflowerblue;
+}
+
+.nyukai-content a:hover {
+  color: blue;
+}
+
+
+/* お問い合わせ
+-------------------- */
+
+
+#otoiawase {
+  background-image: url(../images/yogagazou\(2\).jpg);
+  min-height: 100vh;
+}
+
+form {
+  padding-top: 160px;
+}
+
+form div {
+  margin-bottom: 14px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  opacity: .6;
+  resize: none;
+  border: 1px #fff solid;
+  font-size: 1rem;
+
+}
+
+input[type="email"] {
+  height: 1.8rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  max-width: 390px;
+  border-radius: 150px;
+
+}
+
+textarea {
+  width: 100%;
+  max-width: 415px;
+  height: 8rem;
+  border-radius: 10px;
+}
+
+.section-otoiawase {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#location {
+  padding: 4% 0;
+}
+
+.location-info {
+  width: 40%;
+}
+
+.location-info p {
+  padding: 12px 30px;
+  font-size: 1.125rem;
+}
+
+.location-map {
+  width: 56%;
+}
+
+iframe {
+  width: 100%;
+}
+
+.subtitle {
+  border-bottom: 3px solid #02ffe1da;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 10%;
+  padding-bottom: 100px;
+}
+
+.hajimete-title {
+  padding-top: 240px;
+  text-align: center;
+  border-bottom: 3px solid #000000a9;
+  color: #000000af;
+}
+
+.hajimete-title p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.po-zu-title {
+  color: #000000af;
+
+}
+
+.location-map {
+  border: 4px solid #432;
+  box-shadow: 5px 5px 2px #969da3;
+}
+
+@media (max-width: 600px) {
+
+  .button {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .main-title {
+    font-size: 1.3rem;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .main-nav {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .main-nav li {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+
+  .main-nav a {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-header2 {
+    flex-direction: column;
+    padding-left: 30px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .nyukai-content {
+    padding-top: 230px;
+    width: 100%;
+  }
+
+  form {
+    padding-top: 300px;
+  }
+
+  .section-otoiawase {
+    flex-direction: column;
+  }
+
+  .location-info {
+    width: 100%;
+  }
+
+
+  .location-map {
+    width: 100%;
+  }
+
+  .page-title2 {
+    margin: 0;
+    width: 100%;
+  }
+}
